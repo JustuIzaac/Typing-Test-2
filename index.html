@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Test 2.0</title>
+    <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Roboto+Mono&display=swap" rel="stylesheet" />
+    <link href="style/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <div class="f-select">
+        <select class="lang-select">
+          <option value="id">Indonesia</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+      <span>Typing Test</span>
+    </header>
+    <div class="loader"></div>
+    <div class="main-container">
+      <div class="f-text">
+        <div class="line1"></div>
+        <div class="line2"></div>
+      </div>
+      <div class="f-item">
+        <input class="main-input" type="text" />
+        <div class="clock">
+          <span class="time">01:00</span>
+        </div>
+        <button class="b-restart">
+          <div class="c">
+            <div class="s s1"></div>
+            <div class="s s2"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div id="result-container" class="result-container">
+      <div class="f-result">
+        <label class="result-title">Result</label>
+      </div>
+      <div id="result-box" class="result-box">
+        <div class="result-m">
+          <span class="wpm">0 WPM</span><br />
+          <span class="wpm2">(words per minute)</span>
+        </div>
+        <div class="result-s">
+          <span class="rt">Keystroke</span>
+          <span class="keystroke1">0</span><span>|</span><span class="keystroke2">0</span>
+          <span class="keystroke3">0</span>
+        </div>
+        <div class="result-s">
+          <span class="rt">Accuracy</span>
+          <span class="accu">0%</span>
+        </div>
+        <div class="result-s">
+          <span class="rt">Correct Words</span>
+          <span class="cword">0</span>
+        </div>
+        <div class="result-s">
+          <span class="rt">Incorrect Words</span>
+          <span class="icword">0</span>
+        </div>
+      </div>
+    </div>
+
+    <script async src="script/dataSetup.js"></script>
+    <script defer type="module" src="script/main.js"></script>
+  </body>
+</html>
